@@ -8,6 +8,7 @@ const fs = require("fs");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
 
+// Each team member will be added to this array
 let teamArray = [];
 let teamHTML = "";
 
