@@ -14,8 +14,6 @@ Use the Inquirer npm package to prompt the user for their email, id, and specifi
 
 Your app will run as a Node CLI to gather information about each employee.
 
-Below is an example of what your application may look like. Remember, the styling is completely up to you so try to make it unique.
-
 In the Develop folder, there is a package.json, so make sure to npm install.
 The dependencies are, jest for running the provided tests, and inquirer for collecting input from the user.
 There are also unit tests to help you build the classes necessary.

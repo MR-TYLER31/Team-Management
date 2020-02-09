@@ -7,6 +7,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
+const appendFileAsync = util.promisify(fs.appendFile);
 
 // Each team member will be added to this array
 let teamArray = [];
@@ -146,6 +147,7 @@ function iterateTeamArr(arr) {
 // Function create team.html file with content of employees
 function createPage(partial) {
   let createHTML = generateHTML.mainContent(partial);
+
   writeFileAsync("./output/team.html", createHTML);
 
   console.log("Successfully created html file");
